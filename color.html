@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <!--<input type="color" id="colorPicker">
+
+  <script>
+    const colorPicker = document.getElementById('colorPicker');
+    const body = document.body;
+  
+    colorPicker.addEventListener('input', function() {
+      const color = colorPicker.value;
+      body.style.background = color;
+    });
+  </script>-->
+  <!--<input type="color" id="colorPicker">
+  <p id="colorCode"></p>
+  
+  <script>
+    const colorPicker = document.getElementById('colorPicker');
+    const colorCode = document.getElementById('colorCode');
+  
+    colorPicker.addEventListener('input', function() {
+      const color = colorPicker.value;
+      document.body.style.background = color;
+      colorCode.textContent = color;
+      colorCode.style.textAlign = "center";
+      colorCode.style.fontSize =" 45px" ;
+    });
+  </script>-->
+ <!-- <button id="changeColorButton">Changer la couleur</button>
+<script>
+
+document.getElementById("changeColorButton").addEventListener("click", function() {
+  var selectedColor =;
+  document.body.style.backgroundColor = selectedColor;
+});
+</script>-->
+<input type="color" id="colorPicker">
+<button id="changeColorButton" onclick="changecolor()">Changer la couleur</button>
+<p id="colorCode"></p>
+```
+
+
+<style>
+body {
+  transition: background-color 0.5s ease;
+}
+</style>
+
+
+<script>
+   function changecolor() {
+  var colorPicker = document.getElementById("colorPicker");
+ var colorCode = colorPicker.value;
+  document.body.style.backgroundColor = colorCode;
+  document.getElementById("colorCode").textContent =   colorCode;
+   }  
+
+</script>
+</body>
+</html>
